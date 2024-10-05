@@ -15,7 +15,7 @@ const Food = () => {
     const foodData = { title, price, category, description, image };
 
     try {
-      await axios.post("http://localhost:8000/api/foods/create-Food", foodData);
+      await axios.post("https://crud-backend-chi.vercel.app/api/foods/create-Food", foodData);
       alert("YOUR FOOD ADDED SUCCESSFULLY.");
 
       // Clear form fields after successful submission
